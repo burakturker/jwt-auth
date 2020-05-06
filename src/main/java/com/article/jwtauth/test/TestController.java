@@ -10,9 +10,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("test")
 class TestController {
 
-    @GetMapping
+    @GetMapping("/user")
     @PreAuthorize("hasRole('ROLE_USER')")
-    public ResponseEntity<String> getTestData() {
+    public ResponseEntity<String> getUserTestData() {
+        return ResponseEntity.ok("Hello JWT");
+    }
+
+
+    @GetMapping("/admin")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    public ResponseEntity<String> getAdminTestData() {
         return ResponseEntity.ok("Hello JWT");
     }
 }
