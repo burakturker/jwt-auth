@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: #your data source url
+    username:  #your data source username
+    password:  #your data source password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+application.jwt:
+  secretKey: sesecuresecuresecuresecsecureuresecuresecuresecuresecuresecuresecurecure"
+  tokenPrefix: Bearer
+  tokenExpirationAfterDays: 2
