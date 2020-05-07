@@ -12,3 +12,7 @@ application.jwt:
   secretKey: sesecuresecuresecuresecsecureuresecuresecuresecuresecuresecuresecurecure"
   tokenPrefix: Bearer
   tokenExpirationAfterDays: 2
+
+server:
+  error:
+    include-stacktrace: never

@@ -27,7 +27,6 @@ public class JwtTokenVerifier extends OncePerRequestFilter {
     private final JwtConfig jwtConfig;
     private final SecretKey secretKey;
 
-
     @Override
     protected void doFilterInternal(HttpServletRequest request,
                                     HttpServletResponse response,
